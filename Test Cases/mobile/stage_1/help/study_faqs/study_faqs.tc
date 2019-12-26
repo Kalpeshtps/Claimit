@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check functionality 'STUDY FAQS' option</description>
+   <name>study_faqs</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2802ddf-fa00-4306-85b3-343c7e3ce5db</testCaseGuid>
+</TestCaseEntity>

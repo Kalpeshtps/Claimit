@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>check functionality _elc agree button</description>
+   <name>elc_agree_button_object</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>966da343-0226-468b-bf30-8842f9bf1ec4</testCaseGuid>
+</TestCaseEntity>

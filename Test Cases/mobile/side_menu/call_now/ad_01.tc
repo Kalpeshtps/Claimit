@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Pending Tasks Screen Should be open</description>
+   <name>ad_01</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ace64729-cdd4-4b93-8f84-ffd4fdaaee4e</testCaseGuid>
+</TestCaseEntity>

@@ -5,30 +5,59 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.util.internal.PathUtil as PathUtil
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
-Mobile.comment('Story: Verify correct alarm message')
+Mobile.switchToPortrait()
 
-Mobile.comment('Given that user has started an application')
+Mobile.setText(findTestObject('Login/android.widget.EditText0 - Enter Password'), '123456', 0)
 
-'Get full directory\'s path of android application'
-def appPath = PathUtil.relativeToAbsolutePath(GlobalVariable.G_AndroidApp, RunConfiguration.getProjectDir())
+Mobile.setText(findTestObject('Login/android.widget.EditText1 - Confirm Password'), '123456', 0)
 
-Mobile.startApplication(appPath, false)
+Mobile.tap(findTestObject('Login/android.widget.Button0 - SIGN IN'), 0)
 
-Mobile.comment('And he navigates the application to Graphics form')
+Mobile.switchToPortrait()
 
-Mobile.tap(findTestObject('Application/android.widget.TextView - Graphics'), GlobalVariable.G_Timeout)
+Mobile.tap(findTestObject('Login/android.widget.TextView19 - End-User License Agreement'), 0)
 
-Mobile.comment('When he scroll to Xfermodes text')
+Mobile.tap(findTestObject('Login/android.widget.Button0 - I AGREE'), 0)
 
-Mobile.scrollToText('Xfermodes')
+Mobile.switchToPortrait()
 
-Mobile.comment('Then the current screen should show Xfermodes text after scrolling')
+Mobile.tap(findTestObject('Login/android.widget.Button0 - NEXT'), 0)
 
-'Get item\'s label'
-def itemText = Mobile.getText(findTestObject('Application/Graphics/android.widget.TextView - Xfermodes'), GlobalVariable.G_Timeout)
+Mobile.switchToPortrait()
 
-Mobile.verifyEqual(itemText, 'Xfermodes')
+Mobile.tap(findTestObject('Login/android.widget.TextView19 - eIC'), 0)
+
+Mobile.tap(findTestObject('Login/android.widget.Button1 - AGREE'), 0)
+
+Mobile.switchToPortrait()
+
+Mobile.setText(findTestObject('Login/android.view.View0'), 'l', 0)
+
+Mobile.tap(findTestObject('Login/android.widget.Button1 - DONE'), 0)
+
+Mobile.switchToPortrait()
+
+Mobile.tap(findTestObject('Login/android.widget.Button1 - YES'), 0)
+
+Mobile.pressBack()
+
+Mobile.switchToPortrait()
+
+Mobile.tap(findTestObject('Login/android.widget.Button0 - COMPLETE'), 0)
+
+Mobile.switchToPortrait()
 
 Mobile.closeApplication()
 

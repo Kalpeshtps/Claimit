@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Placeholder Text Should be display for Enter Password and Confirm Password</description>
+   <name>ad_05</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>71367a50-977b-468b-bb23-7b73a752bc13</testCaseGuid>
+</TestCaseEntity>

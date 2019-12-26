@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify end_user_license_agreement</description>
+   <name>end_user_license_agreement</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c710545d-ad5f-41f4-9494-519f4b2351a4</testCaseGuid>
+</TestCaseEntity>
