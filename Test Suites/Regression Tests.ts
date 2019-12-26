@@ -4,7 +4,6 @@
    <name>Regression Tests</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-06-26T16:22:55</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -22,5 +21,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Verify Last Items In List</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e0075429-6f72-44e8-807a-f6f406831310</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Screening Questionnaire</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

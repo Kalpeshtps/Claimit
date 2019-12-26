@@ -4,10 +4,6 @@
 - Script Content: Click &quot;START ALARM SERVICE&quot; and click &quot;STOP ALARM SERVICE&quot;, verify alert show is correct</description>
    <name>Verify Correct Alarm Message</name>
    <tag></tag>
-   <comment>Story: Verify correct alarm message
-Given that user has started an application
-And he navigates the application to Activity form
-When he taps on the Custom Dialog button
-Then the correct dialog message should be displayed</comment>
+   <comment></comment>
    <testCaseGuid>7863351b-9de3-4c4f-823d-9497925136c3</testCaseGuid>
 </TestCaseEntity>
