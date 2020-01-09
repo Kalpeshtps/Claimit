@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Side menu All Screen Redirection.</description>
+   <name>Dashboard Screen</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c8b3fa2e-4fc5-471a-bcf5-f1c106085d15</testCaseGuid>
+</TestCaseEntity>

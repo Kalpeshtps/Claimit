@@ -35,6 +35,12 @@
       <testCaseId>Test Cases/mobile/stage_1/elc/elc_agree_button_object</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>e728b66b-1fcd-475f-9df3-c000e53dec30</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/mobile/stage_1/elc/Signature Screen</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>ec8c2c05-07c2-41f8-910d-270712c5d7d7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -62,6 +68,18 @@
       <guid>b1415a93-0ec5-4bab-ae36-bd6584fbc0d1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/mobile/stage_1/help/technical_faqs/technical_faqs_Chat</testCaseId>
+      <testCaseId>Test Cases/mobile/stage_1/elc/Signature Screen</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f89722b9-068a-4a4e-a8d1-415f0adf5faf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/mobile/stage_1/dashboard/Dashboard Screen</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3ff5d33d-dad6-467f-9875-e3758bf5021a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/mobile/stage_1/Wrong_PID/enter wrong PID</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

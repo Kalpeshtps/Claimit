@@ -17,31 +17,14 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
-WebUI.delay(10)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.Button0 - CREATE NEW PASSWORD'), 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.Button0 - ENTER PASSWORD'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.Button0 - SIGN IN'), 0)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.EditText0 - Enter Password'), '123456', 0)
+String BlankField = Mobile.getText(findTestObject('mobile/Alret Message/android.widget.TextView2 - Please fill all fields.'), 0)
+println(BlankField)
+Mobile.verifyMatch(BlankField, 'Please fill all fields.', false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.Button0 - SIGN IN'), 0)
-
-Mobile.tap(findTestObject('Chnage Password/android.widget.ImageButton0'), 0)
-
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.TextView0 - PROFILE'), 0)
-
-Mobile.tap(findTestObject('Chnage Password/android.widget.Button0 - CHANGE PASSWORD'), 0)
-
-Mobile.setText(findTestObject('Chnage Password/android.widget.EditText0 - Current Password'), '123456', 0)
-
-Mobile.setText(findTestObject('Chnage Password/android.widget.EditText1 - New Password'), '123456', 0)
-
-Mobile.setText(findTestObject('Chnage Password/android.widget.EditText2 - Confirm Password'), '123456', 0)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Chnage Password/android.widget.TextView4 - UPDATE PASSWORD'), 0)
-
-Mobile.tap(findTestObject('Chnage Password/android.widget.TextView3 - BACK TO PROFILE'), 0)
 
 Mobile.closeApplication()
 

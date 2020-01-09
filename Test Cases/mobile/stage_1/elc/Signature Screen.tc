@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify validaction for Blank Signature</description>
+   <name>Signature Screen</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e00a5587-f9c2-4e38-98ab-2be58000943f</testCaseGuid>
+</TestCaseEntity>
