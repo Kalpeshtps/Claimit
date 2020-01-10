@@ -17,12 +17,27 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.Button0 - CREATE NEW PASSWORD'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.Button0 - ENTER PASSWORD'), 
+    0)
+
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.EditText0 - Enter Password'), 
+    '123456', 0)
+
+String Button = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.Button0 - SIGN IN'), 
+    0)
+
+println(Button)
+
+//Mobile.verifyMatch(Button, 'Are you sure you want to sign in with different participant ID?', false, FailureHandling.STOP_ON_FAILURE)
+Mobile.hideKeyboard()
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.Button0 - SIGN IN'), 0)
 
-String BlankField = Mobile.getText(findTestObject('mobile/Alret Message/android.widget.TextView2 - Please fill all fields.'), 0)
-println(BlankField)
-Mobile.verifyMatch(BlankField, 'Please fill all fields.', false, FailureHandling.STOP_ON_FAILURE)
+String PENDING_TASKS = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.TextView16 - PENDING TASKS'), 
+    0)
 
+println(PENDING_TASKS)
+
+//Mobile.verifyMatch(PENDING_TASKS, 'Are you sure you want to sign in with different participant ID?', false, FailureHandling.STOP_ON_FAILURE)
 Mobile.closeApplication()
+
