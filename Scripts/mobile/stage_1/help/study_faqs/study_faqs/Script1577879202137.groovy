@@ -15,9 +15,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
-Mobile.delay(10)
+//Mobile.delay(10)
 
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.Button0 - ENTER PASSWORD'), 
@@ -77,6 +77,13 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/s
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.ImageView0'), 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.TextView0'), 0)
+//Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.TextView0'), 0)
 
-Mobile.closeApplication()
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)
+

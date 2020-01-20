@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
 Mobile.delay(20)
 
@@ -25,7 +25,7 @@ Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Documen
 Mobile.setText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.EditText0 - Enter Password'), 
     '123456', 0)
 
-Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widge.t.Button0 - SIGN IN'), 
+Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.Button0 - SIGN IN'), 
     0)
 
 Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.ImageButton0'), 0)
@@ -62,10 +62,14 @@ Mobile.verifyMatch(Preview, 'Preview', false, FailureHandling.STOP_ON_FAILURE)
 Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.TextView0 - Email'), 
     0)
 
-Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.ImageView1 (1)'), 
-    0)
+Mobile.pressBack()
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)
 
 Mobile.delay(10)
-
-Mobile.closeApplication()
-

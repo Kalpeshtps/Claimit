@@ -15,20 +15,50 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
-Mobile.delay(10)
+//Mobile.delay(10)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.Button0 - ENTER PASSWORD'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.Button0 - ENTER PASSWORD'), 
+    0)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.EditText0 - Enter Password'), '123456', 0)
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.EditText0 - Enter Password'), 
+    '123456', 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.Button0 - SIGN IN'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.Button0 - SIGN IN'), 
+    0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.TextView0 - eIC'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.TextView0 - eIC'), 
+    0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.Button0 - AGREE'), 0)
+Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.Button0 - AGREE'), 
+    0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.delay(10)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.Button0 - AGREE'), 
+    0)
 
-Mobile.closeApplication()
+String SIGNATURE = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.TextView0 - SIGNATURE'), 
+    0)
+println(SIGNATURE)
+Mobile.verifyMatch(SIGNATURE, 'SIGNATURE', false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.ImageButton0'), 
+    0)
+
+String eIC = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_agree_button_object/android.widget.TextView19 - eIC'), 
+    0)
+println(eIC)
+Mobile.verifyMatch(eIC, 'eIC', false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 
+    0)
+

@@ -15,10 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
-
-Mobile.delay(10)
-
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.Button0 - ENTER PASSWORD'), 
     0)
 
@@ -30,8 +27,11 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/an
 //Mobile.delay(10)
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.TextView0 - eIC'), 0)
 
-String elctitle = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.TextView0 - eIC (1)'), 0)
+String elctitle = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.TextView0 - eIC (1)'), 
+    0)
+
 println(elctitle)
+
 Mobile.verifyMatch(elctitle, 'eIC', false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.view.View0 - (888) 232-7036'), 0)
@@ -65,7 +65,15 @@ Mobile.verifyMatch(content, 'STUDY TITLE:', false, FailureHandling.STOP_ON_FAILU
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.Button0 - DISAGREE'), 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.TextView0 - eIC'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 
+    0)
 
-Mobile.closeApplication()
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 
+    0)
 

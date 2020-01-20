@@ -16,20 +16,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startExistingApplication('com.obvio.claimit.uat')
+//Mobile.startExistingApplication("com.obvio.claimit.uat")
+//Mobile.startExistingApplication('2989c4d67d94')
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.Button0 - CREATE NEW PASSWORD'), 
-    0)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.EditText0 - Enter Password'), 
-    '12345', 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.Button0 - CREATE NEW PASSWORD'), 0)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.EditText1 - Confirm Password'), 
-    '123456', 0)
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.EditText0 - Enter Password'), '12345', 0)
 
-Mobile.hideKeyboard()
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.EditText1 - Confirm Password'), '123456', 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.Button0 - SIGN IN'), 
-    0)
+//Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.Button0 - SIGN IN'), 0)
 
 String VerifyText = Mobile.getText(findTestObject('mobile1/application/App/android.widget.TextView2 - Password needs to be at-least 6 characters long.'), 0)
 
@@ -41,6 +41,4 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_pass
     0)
 
 //Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.EditText1 -  (1)'), '123456', 0)
-Mobile.hideKeyboard()
 
-Mobile.closeApplication()

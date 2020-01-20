@@ -41,21 +41,25 @@ Mobile.setText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_doc
 
 Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_document_print/android.widget.Button1 - OK'), 0)
 
-String AlretMEssage = Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_document_print/android.widget.TextView2 - Password doesnt match'), 
-    0)
+//String AlretMEssage = Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_document_print/android.widget.TextView2 - Password doesnt match'), 0)
 
-println(AlretMEssage)
-
+// println(AlretMEssage)
 Mobile.clearText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_document_print/android.widget.EditText0 - '), 
     0)
 
 Mobile.setText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_document_print/android.widget.EditText0 - eg. 5554562018'), 
     '8461261280', 0)
 
-Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_document_print/android.widget.Button1 - OK'), 0)
-
-Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_document_print/android.widget.TextView0 - Select a printer'), 
+Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_preview/android.widget.Button0 - CANCEL'), 
     0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)
 
 Mobile.closeApplication()
 

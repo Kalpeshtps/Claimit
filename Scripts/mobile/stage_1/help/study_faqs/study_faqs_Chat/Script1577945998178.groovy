@@ -15,9 +15,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
-Mobile.delay(10)
+//Mobile.delay(10)
 
 Mobile.tap(findTestObject('study overview/study_overview_Chat_call/android.widget.Button0 - ENTER PASSWORD'), 0)
 
@@ -41,7 +41,8 @@ Mobile.setText(findTestObject('study overview/study_overview_Chat_call/android.w
 
 Mobile.tap(findTestObject('study overview/study_overview_Chat_call/android.widget.ImageView1'), 0)
 
-Mobile.tap(findTestObject('study overview/study_overview_Chat_call/android.widget.TextView1 - CLICK HERE TO CALL OUR STUDY COORDINATOR'), 0)
+Mobile.tap(findTestObject('study overview/study_overview_Chat_call/android.widget.TextView1 - CLICK HERE TO CALL OUR STUDY COORDINATOR'), 
+    0)
 
 Mobile.tap(findTestObject('study overview/study_overview_Chat_call/android.widget.ImageView0'), 0)
 
@@ -50,8 +51,41 @@ Mobile.tap(findTestObject('study overview/study_overview_Chat_call/android.widge
 
 Mobile.tap(findTestObject('study overview/study_overview_Chat_call/android.widget.Button0 - CALL NOW'), 0)
 
-Mobile.getText(findTestObject('study overview/study_overview_Chat_call/android.widget.LinearLayout6'), 0)
+Mobile.pressBack()
 
-Mobile.tap(findTestObject('study overview/study_overview_Chat_call/android.widget.ImageView5'), 0)
+Mobile.pressBack()
 
-Mobile.closeApplication()
+Mobile.delay(10)
+
+String Callnow = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs_Chat/android.widget.TextView0 - CALL NOW'), 
+    0)
+println(Callnow)
+//Mobile.verifyMatch(Callnow, '', false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs_Chat/android.widget.ImageView0'), 
+    0)
+
+String CHATWITHSTUDY = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs_Chat/android.widget.TextView0 - CHAT WITH STUDY COORDINATOR'), 
+    0)
+println(CHATWITHSTUDY)
+//Mobile.verifyMatch(CHATWITHSTUDY, '', false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs_Chat/android.widget.ImageView0'), 
+    0)
+
+String STUDYFAQS = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs_Chat/android.widget.TextView0 - STUDY FAQS'), 
+    0)
+println(STUDYFAQS)
+//Mobile.verifyMatch(STUDYFAQS, '', false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs_Chat/android.widget.ImageView0'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)
+

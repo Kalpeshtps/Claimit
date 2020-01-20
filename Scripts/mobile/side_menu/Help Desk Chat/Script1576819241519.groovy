@@ -16,19 +16,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020 (4).apk', true)
-
+Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+/*
 Mobile.tap(findTestObject('Help Desk Chat/android.widget.Button0 - ENTER PASSWORD'), 0)
 
 Mobile.tap(findTestObject('Help Desk Chat/android.widget.Button0 - CANCEL'), 0)
 
 Mobile.setText(findTestObject('Help Desk Chat/android.widget.EditText0 - Enter Password'), '123456', 0)
 
-Mobile.tap(findTestObject('Help Desk Chat/android.widget.Button0 - SIGN IN'), 0)
+Mobile.tap(findTestObject('Help Desk Chat/android.widget.Button0 - SIGN IN'), 0)*/
+
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.Button0 - ENTER PASSWORD'), 0)
+
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.EditText0 - Enter Password'), '123456', 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.Button0 - SIGN IN'), 0)
+
+Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.TextView17 - 1'), 0)
 
 Mobile.tap(findTestObject('Help Desk Chat/android.widget.ImageButton0'), 0)
 
-Mobile.tap(findTestObject('Help Desk Chat/android.widget.TextView28 - IT HELP DESK'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.TextView11 - IT HELP DESK'), 0)
 
 Mobile.setText(findTestObject('Help Desk Chat/android.widget.EditText0 - Type your messages here'), 'Help Desk', 0)
 

@@ -15,24 +15,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
-Mobile.delay(10)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - CREATE NEW PASSWORD'), 0)
 
-Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.Button0 - ENTER PASSWORD'), 0)
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.EditText0 - Enter Password'), '123456', 0)
 
-Mobile.setText(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.EditText0 - Enter Password'), '123456', 0)
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.EditText1 - Confirm Password'), '123456', 0)
 
-Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.Button0 - SIGN IN'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - SIGN IN'), 0)
 
-Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.ImageButton0'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
 
-Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.Button0 - LOGOUT'), 0)
-
-String SignINName = Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.Button0 - SIGN IN'), 0)
-println(SignINName)
-Mobile.verifyMatch(SignINName, 'SIGN IN', false, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)
+

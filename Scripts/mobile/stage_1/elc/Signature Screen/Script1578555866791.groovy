@@ -15,15 +15,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
 Mobile.delay(10)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.Button0 - ENTER PASSWORD'), 0)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.EditText0 - Enter Password'), '123456', 0)
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.EditText0 - Enter Password'), 
+    '123456', 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.Button0 - SIGN IN'), 0) 
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.Button0 - SIGN IN'), 0)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.TextView19 - eIC'), 0)
 
@@ -31,7 +32,9 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Scr
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.ImageButton0'), 0)
 
-String eIC = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.TextView19 - eIC'), 0)
+String eIC = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.TextView19 - eIC'), 
+    0)
+
 println(eIC)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.TextView19 - eIC'), 0)
@@ -44,14 +47,18 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Scr
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.Button1 - DONE'), 0)
 
-String Signaturerequired = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.TextView3 - Signature required to proceed.'), 0)
+String Signaturerequired = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.TextView3 - Signature required to proceed.'), 
+    0)
+
 println(Signaturerequired)
+
 // Signature required to proceed.
 Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.view.View0'), 'qw', 0)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.Button1 - DONE'), 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.Button1 - YES'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.Button0 - NO'), 0)
+
 /*
 String signed_document_emailed = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.TextView0 - Would you like a copy of this signed document emailed to you'), 0)
 println(signed_document_emailed)
@@ -72,4 +79,16 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Scr
 String Screening_Questionnaire = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.TextView19 - Screening Questionnaire'), 0)
 println(Screening_Questionnaire)
 */
-Mobile.closeApplication()
+Mobile.pressBack()
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 
+    0)

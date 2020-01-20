@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
 Mobile.delay(10)
 
@@ -37,4 +37,3 @@ println(PARTICIPANT)
 
 Mobile.verifyMatch(PARTICIPANT, 'PLEASE ENTER YOUR PARTICIPANT ID', false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.closeApplication()

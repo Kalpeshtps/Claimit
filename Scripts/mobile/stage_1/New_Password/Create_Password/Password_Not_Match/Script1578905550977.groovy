@@ -37,4 +37,4 @@ String VerifyText = Mobile.getText(findTestObject('mobile1/change_password/andro
 println(VerifyText)
 
 Mobile.verifyMatch(VerifyText, 'Password and confirm password do not match.', false, FailureHandling.STOP_ON_FAILURE)
-
+Mobile.closeApplication()
