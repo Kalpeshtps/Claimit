@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
 Mobile.delay(10)
 
@@ -33,9 +33,7 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_fa
 
 String HelpName = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs/android.widget.TextView0 - HELP'), 
     0)
-
 println(HelpName)
-
 Mobile.verifyMatch(HelpName, 'HELP', false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs/android.widget.Button0 - TECHNICAL FAQS'), 
@@ -43,16 +41,12 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_fa
 
 String FAQS = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs/android.widget.TextView0 - TECHNICAL FAQS'), 
     0)
-
 println(FAQS)
-
 Mobile.verifyMatch(FAQS, 'TECHNICAL FAQS', false, FailureHandling.STOP_ON_FAILURE)
 
 String QUS = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs/android.view.View2 - Q Can I use either Android and iOS devices'), 
     0)
-
 println(QUS)
-
 Mobile.verifyMatch(QUS, 'Q: Can I use either Android and iOS devices?', false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs/android.widget.ImageView0'), 
@@ -69,10 +63,19 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_fa
 
 String ChatHelpDesk = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs/android.widget.TextView0 - CHAT WITH IT HELP DESK'), 
     0)
-
 println(ChatHelpDesk)
+Mobile.verifyMatch(ChatHelpDesk, 'CHAT WITH IT HELP DESK', false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('TECHNICAL_FAQS/android.widget.ImageView0'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs/android.widget.ImageView0 (3)'), 
+    0)
 
-Mobile.closeApplication()
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs/android.widget.ImageView0 (1)'), 
+    0)
 
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)

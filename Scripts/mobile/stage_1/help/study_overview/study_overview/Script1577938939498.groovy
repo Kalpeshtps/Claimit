@@ -15,9 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
-
-Mobile.delay(20)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
 Mobile.tap(findTestObject('TECHNICAL_FAQS/technical_faqs_ChatANDCall/android.widget.Button0 - ENTER PASSWORD'), 0)
 
@@ -25,13 +23,6 @@ Mobile.setText(findTestObject('TECHNICAL_FAQS/android.widget.EditText0 - Enter P
 
 Mobile.tap(findTestObject('TECHNICAL_FAQS/android.widget.Button0 - SIGN IN'), 0)
 
-/*
-
-Mobile.setText(findTestObject('study_overview/android.widget.EditText0 - Enter Password'), '123456', 0)
-
-Mobile.tap(findTestObject('study_overview/android.widget.Button0 - SIGN IN'), 0)
-
-*/
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_overview/android.widget.TextView0'), 0)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_overview/android.widget.Button2 - STUDY OVERVIEW'), 
@@ -81,7 +72,16 @@ Mobile.verifyElementVisible(findTestObject('mobile/stage_1_pre_screening_object/
 Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/help/study_overview/android.widget.TextView0'), 
     0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.delay(10)
+
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)
+
 
 /*
 Mobile.tap(findTestObject('TECHNICAL_FAQS/android.widget.Button0 - ENTER PASSWORD'), 0)
@@ -96,5 +96,4 @@ Mobile.tap(findTestObject('study overview/android.widget.Button2 - STUDY OVERVIE
 
 Mobile.tap(findTestObject('study overview/android.widget.ImageView0'), 0)
 */
-Mobile.closeApplication()
 

@@ -15,23 +15,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020 (3).apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
 Mobile.delay(10)
 
-Mobile.tap(findTestObject('Chnage Password/new/android.widget.Button0 - ENTER PASSWORD'), 0)
+Mobile.tap(findTestObject('TECHNICAL_FAQS/technical_faqs_ChatANDCall/android.widget.Button0 - ENTER PASSWORD'), 0)
 
-Mobile.setText(findTestObject('Chnage Password/new/android.widget.EditText0 - Enter Password'), '123456', 0)
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs_Chat/android.widget.EditText0 - Enter Password'), 
+    '123456', 0)
 
-Mobile.tap(findTestObject('Chnage Password/new/android.widget.Button0 - SIGN IN'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs_Chat/android.widget.Button0 - SIGN IN'), 
+    0)
 
 Mobile.tap(findTestObject('Chnage Password/new/android.widget.ImageButton0'), 0)
 
-Mobile.tap(findTestObject('Chnage Password/new/android.widget.LinearLayout24'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/dashboard/android.widget.TextView11 - PROFILE'), 0)
 
 Mobile.tap(findTestObject('Chnage Password/new/android.widget.Button0 - CHANGE PASSWORD'), 0)
 
-Mobile.getText(findTestObject('Chnage Password/new/android.widget.TextView2 - CHANGE PASSWORD'), 0)
+String ChangePassword = Mobile.getText(findTestObject('Chnage Password/new/android.widget.TextView2 - CHANGE PASSWORD'), 0)
+println(ChangePassword)
+Mobile.verifyMatch(ChangePassword, 'CHANGE PASSWORD', false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.setText(findTestObject('Chnage Password/new/android.widget.EditText0 - Current Password'), '123456', 0)
 
@@ -43,8 +47,14 @@ Mobile.hideKeyboard()
 
 Mobile.tap(findTestObject('Chnage Password/new/android.widget.TextView4 - UPDATE PASSWORD'), 0)
 
-String ChangePassword = Mobile.getText(findTestObject('mobile/Alret Message/android.widget.TextView6 - Password changed successfully.'), 0)
-println(ChangePassword)
-Mobile.verifyMatch(ChangePassword, 'Password changed successfully.', false, FailureHandling.STOP_ON_FAILURE)
+String ChangePasswordsuccessfully = Mobile.getText(findTestObject('mobile/Alret Message/android.widget.TextView6 - Password changed successfully.'), 0)
+println(ChangePasswordsuccessfully)
+Mobile.verifyMatch(ChangePasswordsuccessfully, 'Password changed successfully.', false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.closeApplication()
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)

@@ -11,33 +11,33 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>840634c0-35aa-4dd2-9e9c-8be1a31bc43d</testSuiteGuid>
    <testCaseLink>
-      <guid>7fe1085b-431a-49ee-8811-0727e88172b4</guid>
+      <guid>bc95b095-6a62-4fb8-83d3-d895bc1c6fb7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/mobile/stage_1/end_user_license_agreement/end_user_license_agreement</testCaseId>
+      <testCaseId>Test Cases/mobile/Dahsboard -Side Menu/elc_DOCUMENTS_Menu/elc DOCUMENTS Menu</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6aa421e9-52cc-416b-a7a9-fdd947b9a3e3</guid>
+      <guid>a4f6c315-9286-448a-a533-e00c01199cb0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/mobile/stage_1/elc/elc</testCaseId>
+      <testCaseId>Test Cases/mobile/Dahsboard -Side Menu/elc_DOCUMENTS_Menu/elc_Dociments_EMAIL</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>797572cf-0e92-47a1-8e40-4c79e04d6113</guid>
+      <guid>839a39ee-1d80-440d-ba73-c5646f750698</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/mobile/stage_1/elc/elc_need_help</testCaseId>
+      <testCaseId>Test Cases/mobile/Dahsboard -Side Menu/elc_DOCUMENTS_Menu/elc_Dociments_Three_Option_redirection</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>9b05ed56-18a5-489e-a433-fa51001e5f29</guid>
+      <guid>a2ea3f49-023b-4dfa-a6ac-c5d7b3615861</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/mobile/stage_1/elc/elc_agree_button_object</testCaseId>
+      <testCaseId>Test Cases/mobile/Dahsboard -Side Menu/elc_DOCUMENTS_Menu/elc_Documents_preview</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8a4395ff-185a-4252-9e19-e3942e6ed0de</guid>
+      <guid>430cb415-fda6-4165-99e5-d9ca4b67ee46</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/mobile/stage_1/elc/Signature Screen</testCaseId>
+      <testCaseId>Test Cases/mobile/Dahsboard -Side Menu/elc_DOCUMENTS_Menu/elc_DOCUMENT_Print</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
 Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.Button0 - ENTER PASSWORD'), 
     0)
@@ -36,20 +36,32 @@ Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Doc
 
 Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.ImageView1'), 0)
 
-Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.TextView0 - Email'), 
+String Email = Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.TextView0 - Email'), 
     0)
+println(Email)
+Mobile.verifyMatch(Email, 'Email', false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.TextView1 - Print'), 
+String Print = Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.TextView1 - Print'), 
     0)
+println(Print)
+//Mobile.verifyMatch(Print, 'Email', false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.TextView2 - Preview'), 
+String Preview = Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.TextView2 - Preview'), 
     0)
+println(Preview)
+//Mobile.verifyMatch(Preview, 'Email', false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.TextView0 - Email'), 
     0)
+Mobile.pressBack()
 
-Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_Document_email/android.widget.ImageView1 (1)'), 
-    0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
 
-Mobile.closeApplication()
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)
+
+
 

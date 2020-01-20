@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
 Mobile.tap(findTestObject('TECHNICAL_FAQS/technical_faqs_ChatANDCall/android.widget.Button0 - ENTER PASSWORD'), 0)
 
@@ -46,8 +46,14 @@ Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/help/technica
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs_Chat/android.widget.ImageView1'), 
     0)
 
+String TitleHelepDesk = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/tec/android.widget.TextView0 - CHAT WITH IT HELP DESK'),
+	0)
+println(TitleHelepDesk)
+Mobile.verifyMatch(TitleHelepDesk, 'CHAT WITH IT HELP DESK', false, FailureHandling.STOP_ON_FAILURE) 
+
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs_Chat/android.widget.TextView1 - CLICK HERE TO CALL OUR IT HELP DESK'), 
     0)
+
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs_Chat/android.widget.ImageView0'), 
     0)
@@ -61,5 +67,29 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_fa
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/technical_faqs_Chat/android.widget.ImageView5'), 
     0)
 
-Mobile.closeApplication()
+Mobile.pressBack()
+
+String CallNow =  Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/tec/android.widget.TextView0 - CALL NOW'), 
+    0)
+println(CallNow)
+Mobile.verifyMatch(CallNow, 'CALL NOW', false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/tec/android.widget.ImageView0'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/tec/android.widget.ImageView0'), 0)
+
+String TecHFAQs = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/tec/android.widget.TextView0 - TECHNICAL FAQS'), 
+    0)
+println(TecHFAQs)
+Mobile.verifyMatch(TecHFAQs, 'TECHNICAL FAQS', false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/technical_faqs/tec/android.widget.ImageView0'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)
 
