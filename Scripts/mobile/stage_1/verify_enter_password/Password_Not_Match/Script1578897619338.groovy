@@ -15,44 +15,55 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.Button0 - ENTER PASSWORD (1)'),
-	0)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.EditText0 - Enter Password (1)'),
-	'123456', 0)
+//Mobile.delay(10)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.Button0 - ENTER PASSWORD (1)'), 
+    0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.Button0 - SIGN IN (2)'),
-	0)
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.EditText0 - Enter Password (1)'), 
+    '123456', 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.Button0 - SIGN IN (2)'), 
+    0)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.ImageButton0'), 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.TextView25 - PROFILE'),
-	0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.TextView25 - PROFILE'), 
+    0)
 
-String profileTitle = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.TextView0 - PROFILE'),
-	0)
+String profileTitle = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/verify_new_password/android.widget.TextView0 - PROFILE'), 
+    0)
+
 println(profileTitle)
+
 Mobile.verifyMatch(profileTitle, 'PROFILE', false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.Button0 - CREATE NEW PASSWORD'), 
-    0)
+//Mobile.tap(findTestObject('Chnage Password/android.widget.TextView2 - CHANGE PASSWORD'), 0)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.EditText0 - Enter Password'), 
-    '1234589', 0)
+Mobile.tap(findTestObject('android.widget.Button0 - CHANGE PASSWORD'), 0)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.EditText1 - Confirm Password'), 
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Change_Password_Successfully/android.widget.EditText0 - Current Password'), 
     '123456', 0)
 
-Mobile.hideKeyboard()
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Change_Password_Successfully/android.widget.EditText0 - New Password'), 
+    '123456', 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Create_new_PassWord_length/android.widget.Button0 - SIGN IN'), 
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Change_Password_Successfully/android.widget.EditText0 - Confirm Password'), 
+    '123456', 0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Change_Password_Successfully/android.widget.TextView0 - UPDATE PASSWORD'), 
     0)
 
-String VerifyText = Mobile.getText(findTestObject('mobile1/change_password/android.widget.TextView2 - Password and confirm password do not match.'), 
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Change_Password_Successfully/android.widget.ImageButton0'), 
     0)
 
-println(VerifyText)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Change_Password_Successfully/android.widget.Button0 - LOGOUT'), 
+    0)
 
-Mobile.verifyMatch(VerifyText, 'Password and confirm password do not match.', false, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Change_Password_Successfully/android.widget.TextView0 - Use different participant ID'), 
+    0)
 
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/verify_enter_password/Change_Password_Successfully/android.widget.Button0 - YES'), 
+    0)
 

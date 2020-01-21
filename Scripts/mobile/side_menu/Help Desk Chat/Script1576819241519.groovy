@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 /*
 Mobile.tap(findTestObject('Help Desk Chat/android.widget.Button0 - ENTER PASSWORD'), 0)
 
@@ -49,4 +49,4 @@ Mobile.tap(findTestObject('Help Desk Chat/android.widget.ImageView1'), 0)
 
 Mobile.tap(findTestObject('Help Desk Chat/android.widget.ImageView0'), 0)
 
-Mobile.closeApplication()
+//Mobile.closeApplication()

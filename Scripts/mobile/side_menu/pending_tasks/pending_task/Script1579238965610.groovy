@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Desktop\\ClaimIt_2020.apk', true)
+//Mobile.startApplication('C:\\Users\\User\\Desktop\\ClaimIt_2020.apk', true)
 Mobile.delay(10)
 Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/pending_tasks_menu/android.widget.Button0 - ENTER PASSWORD'), 0)
 Mobile.setText(findTestObject('mobile/Dahsboard -Side Menu/pending_tasks_menu/android.widget.EditText0 - Enter Password'), '123456', 0)
@@ -28,4 +28,4 @@ Mobile.verifyMatch(pendingtitle,'PENDING TASKS' , false, FailureHandling.STOP_ON
 Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/pending_tasks_menu/android.widget.TextView0 - 1 Pending task'), 0)
 Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/pending_tasks_menu/android.widget.CheckBox0 - Show completed tasks'), 0)
 Mobile.verifyElementChecked(findTestObject('mobile/Dahsboard -Side Menu/pending_tasks_menu/android.widget.CheckBox0 - Show completed tasks'), 0, FailureHandling.STOP_ON_FAILURE)
-Mobile.closeApplication()
+//Mobile.closeApplication()

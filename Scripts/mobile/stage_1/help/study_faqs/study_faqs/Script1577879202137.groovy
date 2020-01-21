@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 //Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
-//Mobile.delay(10)
+Mobile.delay(10)
 
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.Button0 - ENTER PASSWORD'), 

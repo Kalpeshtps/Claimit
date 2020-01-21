@@ -16,7 +16,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 //Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
-
+Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', false)
+	
 Mobile.delay(10)
 
 Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.Button0 - ENTER PASSWORD'), 0)

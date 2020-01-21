@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+// Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
 Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/elc_DOCUMENTS/elc_document_print/android.widget.Button0 - ENTER PASSWORD'), 
     0)

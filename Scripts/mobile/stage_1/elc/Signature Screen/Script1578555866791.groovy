@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+// Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
 Mobile.delay(10)
 
@@ -41,19 +41,21 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Scr
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.Button1 - AGREE'), 0)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.view.View0'), 't', 0)
+//Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.view.View0'), ' ', 0)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.Button0 - CLEAR'), 0)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.Button1 - DONE'), 0)
-
+/*
 String Signaturerequired = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.TextView3 - Signature required to proceed.'), 
     0)
 
 println(Signaturerequired)
-
+*/
 // Signature required to proceed.
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.view.View0'), 'qw', 0)
+//Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.view.View0'), 'qw', 0)
+
+Mobile.delay(10)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/Signature Screen/android.widget.Button1 - DONE'), 0)
 

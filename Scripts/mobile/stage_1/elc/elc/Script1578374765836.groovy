@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+ Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.Button0 - ENTER PASSWORD'), 
     0)
 
@@ -48,14 +48,14 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/an
 Mobile.scrollToText('How long is the study? :')
 
 Mobile.scrollToText('STUDY TITLE:')
-
+/*
 String subtitle = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.view.View0 - INFORMED CONSENT DOCUMENT'), 
     0)
 
 println(subtitle)
 
-Mobile.verifyMatch(subtitle, 'INFORMED CONSENT DOCUMENT', false, FailureHandling.STOP_ON_FAILURE)
-
+Mobile.verifyMatch(subtitle, 'INFORMED CONSENT DOCUMENT  ', false, FailureHandling.STOP_ON_FAILURE)
+*/
 String content = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.view.View0 - STUDY TITLE'), 
     0)
 
