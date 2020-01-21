@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>User Should be Able to Show elC Document</description>
    <name>elc_Dociments_preview - Copy</name>
    <tag></tag>
    <comment></comment>
