@@ -113,18 +113,6 @@
       <testCaseId>Test Cases/mobile/stage_1/verify_forgot_paswword/Forgot_password_message_Screen/forgot_password_message_screen</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3b80b5a0-d3f9-49c7-a9fe-c97053d9ba62</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/mobile/stage_1/verify_enter_password/Password_Not_Match</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9008f7bc-f729-42f0-bab4-50af3f18889c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/mobile/stage_1/elc/Signature Screen</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>3ff5d33d-dad6-467f-9875-e3758bf5021a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -163,7 +151,7 @@
    <testCaseLink>
       <guid>f24a74ff-9d00-4a5b-a553-2aa0d407e767</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/mobile/Dahsboard -Side Menu/elc_DOCUMENTS_Menu/elc_DOCUMENT_Print</testCaseId>
    </testCaseLink>
    <testCaseLink>
