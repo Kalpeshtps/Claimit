@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>User Should be Able to Show elC Document</description>
-   <name>elc_Dociments_preview</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f2e1e795-f5e1-49d3-96b3-6385fc805719</testCaseGuid>
-</TestCaseEntity>
