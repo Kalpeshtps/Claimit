@@ -14,7 +14,35 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import login.MyTestRunner
 
-CucumberKW.runWithCucumberRunner(MyTestRunner.class)
+WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
+WebUI.navigateToUrl('https://uat.lumenato.claimitadmin.obviohealth.net/')
+
+WebUI.setText(findTestObject('Object Repository/Screening Approval/Page_Claimit/input_Sign In_email'), 'admin@claimit.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Screening Approval/Page_Claimit/input_Sign In_password'), '1qLKCmtuCyLQZ1baQc2tGw==')
+
+WebUI.click(findTestObject('Object Repository/Screening Approval/Page_Claimit/button_Log In'))
+
+WebUI.click(findTestObject('Object Repository/Screening Approval/Page_ClaimIt Admin/a_Participants List'))
+
+WebUI.setText(findTestObject('Object Repository/Screening Approval/Page_ClaimIt Admin/input'), '129-731')
+
+WebUI.click(findTestObject('Page_ClaimIt Admin/a_View'))
+
+WebUI.click(findTestObject('Page_ClaimIt Admin/a_View_1'))
+
+WebUI.delay(10)
+
+WebUI.scrollToPosition(110, 340)
+
+WebUI.click(findTestObject('Page_ClaimIt Admin/label_Approve'))
+
+WebUI.acceptAlert()
+
+WebUI.delay(10)
+
+WebUI.closeBrowser()

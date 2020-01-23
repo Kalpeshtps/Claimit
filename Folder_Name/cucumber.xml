@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="204.52076">
+<testcase classname="Title of your feature" name="Title of your scenario" time="204.52076">
+<system-out><![CDATA[Given i want to launch application..........................................passed
+When Tap on Enter Password button...........................................passed
+When enter Password and tap on Sign button..................................passed
+Then verify Dashbord Screen open............................................passed
+When Tap On Side menu and Tap to open Pending Task option...................passed
+Then Verify redirect in Pending Task Screen.................................passed
+When Tap to open Side menu and Tap on Profile option........................passed
+Then verify redirect in Profile Screen......................................passed
+When Tap to open Side menu and Tap on eIC Documents option..................passed
+Then Verify redirect in eIC Documents Screen................................passed
+When Tap to open Side menu and Tap on STUDY TEAM CHAT.......................passed
+Then verify redirect in STUDY TEAM CHAT Screen..............................passed
+When Tap to open Side menu and Tap on IT HELP DESK..........................passed
+Then verify redirect in IT HELP DESK Screen.................................passed
+When Tap to open Side menu and Tap on SETTINGS Option.......................passed
+Then verify redirect in SETTINGS Screen.....................................passed
+When Tap on open side menu and Tap on LOGOUT button.........................passed
+Then Verify redirect in Enter Password screen...............................passed
+When Tap on Use different participant ID....................................passed
+Given i want to launch application..........................................passed
+When Tap on Enter Password button...........................................passed
+When enter Password and tap on Sign button..................................passed
+Then verify Dashbord Screen open............................................passed
+When Tap Side menu and Click on Log out button..............................passed
+Then verify Enter Password Screen Is open...................................passed
+When tap on Login with different PID........................................passed
+When DIsplay Alret Popup and tap on yes.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

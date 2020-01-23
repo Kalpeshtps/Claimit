@@ -1,0 +1,364 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "title-of-your-feature;title-of-your-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 51643030400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i want to launch application",
+            "match": {
+              "location": "loginWithMobile.i_want_to_launch_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22416812500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Tap on Enter Password button",
+            "match": {
+              "location": "loginWithMobile.Tap_on_Enter_Password_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3120764000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter Password and tap on Sign button",
+            "match": {
+              "location": "loginWithMobile.enter_Password_and_tap_on_Sign_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18957251400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify Dashbord Screen open",
+            "match": {
+              "location": "loginWithMobile.verify_Dashbord_Screen_open()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7840100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Tap On Side menu and Tap to open Pending Task option",
+            "match": {
+              "location": "Dashbord_Redirection.tap_On_Side_menu_and_Tap_to_open_Pending_Task_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 421600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify redirect in Pending Task Screen",
+            "match": {
+              "location": "Dashbord_Redirection.verify_redirect_in_Pending_Task_Screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 412600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Tap to open Side menu and Tap on Profile option",
+            "match": {
+              "location": "Dashbord_Redirection.tap_to_open_Side_menu_and_Tap_on_Profile_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 389200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "verify redirect in Profile Screen",
+            "match": {
+              "location": "Dashbord_Redirection.verify_redirect_in_Profile_Screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 402200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Tap to open Side menu and Tap on eIC Documents option",
+            "match": {
+              "location": "Dashbord_Redirection.tap_to_open_Side_menu_and_Tap_on_eIC_Documents_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 438800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Verify redirect in eIC Documents Screen",
+            "match": {
+              "location": "Dashbord_Redirection.verify_redirect_in_eIC_Documents_Screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 557000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Tap to open Side menu and Tap on STUDY TEAM CHAT",
+            "match": {
+              "location": "Dashbord_Redirection.tap_to_open_Side_menu_and_Tap_on_STUDY_TEAM_CHAT()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 525400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "verify redirect in STUDY TEAM CHAT Screen",
+            "match": {
+              "location": "Dashbord_Redirection.verify_redirect_in_STUDY_TEAM_CHAT_Screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 406100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Tap to open Side menu and Tap on IT HELP DESK",
+            "match": {
+              "location": "Dashbord_Redirection.tap_to_open_Side_menu_and_Tap_on_IT_HELP_DESK()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 444100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "verify redirect in IT HELP DESK Screen",
+            "match": {
+              "location": "Dashbord_Redirection.verify_redirect_in_IT_HELP_DESK_Screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 524200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Tap to open Side menu and Tap on SETTINGS Option",
+            "match": {
+              "location": "Dashbord_Redirection.tap_to_open_Side_menu_and_Tap_on_SETTINGS_Option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 402200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "verify redirect in SETTINGS Screen",
+            "match": {
+              "location": "Dashbord_Redirection.verify_redirect_in_SETTINGS_Screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 396300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Tap on open side menu and Tap on LOGOUT button",
+            "match": {
+              "location": "Dashbord_Redirection.tap_on_open_side_menu_and_Tap_on_LOGOUT_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 415900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Verify redirect in Enter Password screen",
+            "match": {
+              "location": "Dashbord_Redirection.verify_redirect_in_Enter_Password_screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 401400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Tap on Use different participant ID",
+            "match": {
+              "location": "Dashbord_Redirection.tap_on_Use_different_participant_ID()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46682237700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "i want to launch application",
+            "match": {
+              "location": "loginWithMobile.i_want_to_launch_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24632112500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Tap on Enter Password button",
+            "match": {
+              "location": "loginWithMobile.Tap_on_Enter_Password_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3189672400,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "enter Password and tap on Sign button",
+            "match": {
+              "location": "loginWithMobile.enter_Password_and_tap_on_Sign_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21142459300,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "verify Dashbord Screen open",
+            "match": {
+              "location": "loginWithMobile.verify_Dashbord_Screen_open()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6010345700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Tap Side menu and Click on Log out button",
+            "match": {
+              "location": "loginWithMobile.tap_Side_menu_and_Click_on_Log_out_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2876056600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "verify Enter Password Screen Is open",
+            "match": {
+              "location": "loginWithMobile.verify_Enter_Password_Screen_Is_open()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1963802900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "tap on Login with different PID",
+            "match": {
+              "location": "loginWithMobile.tap_on_Login_with_different_PID()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1838939000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "DIsplay Alret Popup and tap on yes",
+            "match": {
+              "location": "loginWithMobile.display_Alret_Popup_and_tap_on_yes()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "Include/features/login_Screen/02_login.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
