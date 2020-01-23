@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="204.52076">
-<testcase classname="Title of your feature" name="Title of your scenario" time="204.52076">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="538.796913">
+<testcase classname="Title of your feature" name="User able to login and logout" time="98.298208">
 <system-out><![CDATA[Given i want to launch application..........................................passed
-When Tap on Enter Password button...........................................passed
+Then verify Create new Paswword button is display...........................passed
+When Tap on Create new Paswword button......................................passed
+Then Verify Confirm Password text box Is display............................passed
+When Enter Password and Confirm Password fill both Filed....................passed
+When Tap on SIGN IN button..................................................passed
+Then verify Dashbord Screen open............................................passed
+When Tap Side menu and Click on Log out button..............................passed
+Then verify Enter Password Screen Is open...................................passed
+When tap on Login with different PID........................................passed
+When DIsplay Alret Popup and tap on yes.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="User able to login and logout" time="44.051063">
+<system-out><![CDATA[When Tap on Enter Password button...........................................passed
+When enter Password and tap on Sign button..................................passed
+Then verify Dashbord Screen open............................................passed
+When Tap Side menu and Click on Log out button..............................passed
+Then verify Enter Password Screen Is open...................................passed
+When tap on Login with different PID........................................passed
+When DIsplay Alret Popup and tap on yes.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="Title of your scenario" time="68.178514">
+<system-out><![CDATA[When Tap on Enter Password button...........................................passed
 When enter Password and tap on Sign button..................................passed
 Then verify Dashbord Screen open............................................passed
 When Tap On Side menu and Tap to open Pending Task option...................passed
@@ -20,9 +43,86 @@ Then verify redirect in SETTINGS Screen.....................................pass
 When Tap on open side menu and Tap on LOGOUT button.........................passed
 Then Verify redirect in Enter Password screen...............................passed
 When Tap on Use different participant ID....................................passed
-Given i want to launch application..........................................passed
-When Tap on Enter Password button...........................................passed
+When DIsplay Alret Popup and tap on yes.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="User able to login and logout" time="70.900445">
+<system-out><![CDATA[When Tap on Enter Password button...........................................passed
 When enter Password and tap on Sign button..................................passed
+Then verify Dashbord Screen open............................................passed
+When Tap on Help option.....................................................passed
+Then verify Help Option Is open.............................................passed
+When Tap on STUDY FAQS Option...............................................passed
+Then verify STUDY FAQS Is Display...........................................passed
+Then verify redirect in STUDY FAQS Screen...................................passed
+When Tap in Close button....................................................passed
+Then verify redirect in Dashboard Screen....................................passed
+When Tap on Help button and tap on STUDY FAQS Option........................passed
+Then Verify STUDY FAQS Title................................................passed
+Then verify Content OF STUDY FAQS...........................................passed
+When Tap on Question not answered click here button.........................passed
+Then Verify STUDY Chat Screen is open.......................................passed
+When tap on CLose and Tap on STUDY Chat Close button........................passed
+When Tap Side menu and Click on Log out button..............................passed
+Then verify Enter Password Screen Is open...................................passed
+When tap on Login with different PID........................................passed
+When DIsplay Alret Popup and tap on yes.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="User able to login and logout" time="44.843959">
+<system-out><![CDATA[When Tap on Enter Password button...........................................passed
+When enter Password and tap on Sign button..................................passed
+Then verify Dashbord Screen open............................................passed
+When Tap Side menu and Click on Log out button..............................passed
+Then verify Enter Password Screen Is open...................................passed
+When tap on Login with different PID........................................passed
+When DIsplay Alret Popup and tap on yes.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="User able to login and logout" time="76.581917">
+<system-out><![CDATA[When Tap on Enter Password button...........................................passed
+When enter Password and tap on Sign button..................................passed
+Then verify Dashbord Screen open............................................passed
+Then Verify end user license agreement Task Is Display......................passed
+When Tap on end user license agreement Task.................................passed
+Then Verify end user license agreement Screen is Open.......................passed
+When Tap on end user license agreement Screen Close button..................passed
+Then verify Dashbord Screen open............................................passed
+When Tap on end user license agreement Task.................................passed
+Then Verify end user license agreement Screen is Open.......................passed
+When Tap on Need Help Tap here to talk to study coordinator button..........passed
+Then verify Need Help Tap here to talk to study coordinator screen is open..passed
+Then Tap on study coordinator screen Close button...........................passed
+Then verify Agree buton is Display..........................................passed
+When Tap on Agree button....................................................passed
+Then verify Study Overview Screen Is open...................................passed
+Then verify next button is Display..........................................passed
+When Tap on next button in Study Overview screen............................passed
+Then verify Dashbord Screen open............................................passed
+Then verify elC Task Is Display.............................................passed
+When Tap Side menu and Click on Log out button..............................passed
+Then verify Enter Password Screen Is open...................................passed
+When tap on Login with different PID........................................passed
+When DIsplay Alret Popup and tap on yes.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="User able to login and logout" time="135.942807">
+<system-out><![CDATA[When Tap on Enter Password button...........................................passed
+When enter Password and tap on Sign button..................................passed
+Then verify Dashbord Screen open............................................passed
+When Tap on elC screen......................................................passed
+Then verify elC Title Is Display............................................passed
+Then verify in elC Screen Mobile Number Is display..........................passed
+When tap on elC screen mobile number........................................passed
+When Tap on elC mobile number is display and Tap on cancle button...........passed
+Then verify in elC Screen Email id is display...............................passed
+When Tap on elc Screen Emial id is Display..................................passed
+Then verify cancle button is Disply.........................................passed
+When Tap on pressback for redirect on elc Screen............................passed
+Then Verify How long is the study text able to Display......................passed
+Then verify STUDY TITLE Text able to Display................................passed
+Then verify STUDY TITLE text able to Display in elC screen..................passed
+When in elc screen tap on DISAGREE button...................................passed
 Then verify Dashbord Screen open............................................passed
 When Tap Side menu and Click on Log out button..............................passed
 Then verify Enter Password Screen Is open...................................passed

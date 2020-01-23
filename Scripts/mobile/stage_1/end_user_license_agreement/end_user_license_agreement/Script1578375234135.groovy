@@ -15,8 +15,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
+Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
+Mobile.delay(20)
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.Button0 - ENTER PASSWORD'), 0)
 
 Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.EditText0 - Enter Password'), 
@@ -25,7 +26,7 @@ Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/end_user_lice
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.Button0 - SIGN IN'), 
     0)
 
-Mobile.delay(0)
+Mobile.delay(20)
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.TextView0 - End-User License Agreement'), 
     0)
