@@ -25,9 +25,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="Include/features", glue="", plugin = ["pretty",
-	"junit:Folder_Name/cucumber.xml",
-	"html:Folder_Name",
-	"json:Folder_Name/cucumber.json"])
+	"junit:cucumber_Report/cucumber.xml",
+	"html:cucumber_Report",
+	"json:cucumber_Report/cucumber.json"])
 
 public class MyTestRunner {
 }
