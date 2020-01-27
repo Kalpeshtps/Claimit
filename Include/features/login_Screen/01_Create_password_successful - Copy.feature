@@ -1,10 +1,7 @@
-
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: when User First time login with PID That time create Passoword Screen Should be OPen 
 
   @tag1
-  Scenario: User able to login and logout
+  Scenario: create Passowrd With successfully  
     Given i want to launch application
     Then verify Create new Paswword button is display  
     When Tap on Create new Paswword button
