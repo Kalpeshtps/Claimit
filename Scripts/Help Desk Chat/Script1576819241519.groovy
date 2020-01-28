@@ -33,10 +33,12 @@ Mobile.setText(findTestObject('Help Desk Chat/android.widget.EditText0 - Type yo
 
 Mobile.tap(findTestObject('Help Desk Chat/android.widget.ImageView1'), 0)
 
-Mobile.setText(findTestObject('Help Desk Chat/android.widget.EditText0 - Type your messages here (1)'), 'Using Katalon', 0)
+Mobile.setText(findTestObject('Help Desk Chat/android.widget.EditText0 - Type your messages here (1)'), 'Using Katalon', 
+    0)
 
 Mobile.tap(findTestObject('Help Desk Chat/android.widget.ImageView1'), 0)
 
 Mobile.tap(findTestObject('Help Desk Chat/android.widget.ImageView0'), 0)
 
 Mobile.closeApplication()
+

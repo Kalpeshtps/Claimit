@@ -50,27 +50,28 @@ class Create_password_successful {
 	 */
 	@Then("verify Create new Paswword button is display")
 	public void verify_Create_new_Paswword_button_is_display() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - CREATE NEW PASSWORD'), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/01_Create_password_successful/android.widget.Button0 - CREATE NEW PASSWORD'), 0, FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("Tap on Create new Paswword button")
 	public void tap_on_Create_new_Paswword_button() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - CREATE NEW PASSWORD'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/01_Create_password_successful/android.widget.Button0 - CREATE NEW PASSWORD'),
+				0)
 	}
 
 	@Then("Verify Confirm Password text box Is display")
 	public void verify_Confirm_Password_text_box_Is_display() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.EditText1 - Confirm Password'), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/01_Create_password_successful/android.widget.EditText1 - Confirm Password'), 0, FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("Enter Password and Confirm Password fill both Filed")
 	public void enter_Password_and_Confirm_Password_fill_both_Filed() {
-		Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.EditText0 - Enter Password'), '123456', 0)
-		Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.EditText1 - Confirm Password'), '123456', 0)
+		Mobile.setText(findTestObject('cucumber_Object/01_Create_password_successful/android.widget.EditText0 - Enter Password'), '123456', 0)
+		Mobile.setText(findTestObject('cucumber_Object/01_Create_password_successful/android.widget.EditText1 - Confirm Password'), '123456', 0)
 	}
 
 	@When("Tap on SIGN IN button")
 	public void tap_on_SIGN_IN_button() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - SIGN IN'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/01_Create_password_successful/android.widget.Button0 - SIGN IN'), 0)
 	}
 }

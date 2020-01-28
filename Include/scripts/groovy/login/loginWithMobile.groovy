@@ -56,17 +56,17 @@ class loginWithMobile {
 
 	@When("Tap on Enter Password button")
 	def Tap_on_Enter_Password_button(){
-		Mobile.tap(findTestObject('Chnage Password/new/android.widget.Button0 - ENTER PASSWORD'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/02_login/android.widget.Button0 - ENTER PASSWORD (1)'), 0)
 	}
 	@Then("enter Password and tap on Sign button")
 	def enter_Password_and_tap_on_Sign_button() {
-		Mobile.setText(findTestObject('Chnage Password/new/android.widget.EditText0 - Enter Password'), '123456', 0)
-		Mobile.tap(findTestObject('Chnage Password/new/android.widget.Button0 - SIGN IN'), 0)
+		Mobile.setText(findTestObject('cucumber_Object/02_login/android.widget.EditText0 - Enter Password'), '123456', 0)
+		Mobile.tap(findTestObject('cucumber_Object/02_login/android.widget.Button0 - SIGN IN'), 0)
 	}
 
 	@Then("verify Dashbord Screen open")
 	public void verify_Dashbord_Screen_open() {
-		Mobile.waitForElementPresent(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.ImageButton0'), 30)
-		Mobile.verifyElementExist(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.ImageButton0'), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.waitForElementPresent(findTestObject('cucumber_Object/05_log_out_successful/android.widget.ImageButton0'), 30)
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/05_log_out_successful/android.widget.ImageButton0'), 0, FailureHandling.STOP_ON_FAILURE)
 	}
 }

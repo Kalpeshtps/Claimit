@@ -17,19 +17,35 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020.apk', true)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - CREATE NEW PASSWORD'), 0)
+//Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - CREATE NEW PASSWORD'),    0)
+Mobile.tap(findTestObject('cucumber_Object/01_Create_password_successful/android.widget.Button0 - CREATE NEW PASSWORD'), 
+    0)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.EditText0 - Enter Password'), '123456', 0)
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.EditText0 - Enter Password'), 
+    '123456', 0)
 
-Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.EditText1 - Confirm Password'), '123456', 0)
+Mobile.setText(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.EditText1 - Confirm Password'), 
+    '123456', 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - SIGN IN'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - SIGN IN'), 
+    0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 0)
+Mobile.tap(findTestObject('cucumber_Object/05_log_out_successful/android.widget.Button0 - SIGN IN'), 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 0)
+Mobile.tap(findTestObject('cucumber_Object/05_log_out_successful/android.widget.Button0 - LOGOUT'), 0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.ImageButton0'), 
+    0)
 
-Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button0 - LOGOUT'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 
+    0)
+
+Mobile.tap(findTestObject('cucumber_Object/03_Dashbord_Redirection/android.widget.TextView3 - Use different participant ID'), 
+    0)
+
+Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 
+    0)
 

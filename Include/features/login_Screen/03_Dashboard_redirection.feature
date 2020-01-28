@@ -5,7 +5,7 @@ Feature: Title of your feature
 
   @tag1
   Scenario: Title of your scenario
-#    Given i want to launch application
+    Given i want to launch application
     When Tap on Enter Password button
     When enter Password and tap on Sign button
     Then verify Dashbord Screen open

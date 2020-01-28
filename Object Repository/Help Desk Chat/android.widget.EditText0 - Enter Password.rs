@@ -4,6 +4,12 @@
    <name>android.widget.EditText0 - Enter Password</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.EditText' and @instance = '0' and (text() = 'Enter Password' or . = 'Enter Password') and @resource-id = 'com.obvio.claimit.v2020.uat:id/etPassword']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

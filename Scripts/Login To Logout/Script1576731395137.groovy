@@ -44,12 +44,10 @@ Mobile.closeApplication()
 */
 Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020 (3).apk', true)
 
-Mobile.tap(findTestObject('Chnage Password/android.widget.Button0 - ENTER PASSWORD'), 0)
+Mobile.tap(findTestObject('cucumber_Object/03_Dashbord_Redirection/android.widget.Button0 - ENTER PASSWORD (1)'), 0)
 
 //Mobile.tap(findTestObject('Chnage Password/android.widget.Button0 - CANCEL'), 0)
-
 //Mobile.tap(findTestObject('Chnage Password/android.widget.EditText0 - Enter Password'), 0)
-
 Mobile.setText(findTestObject('Chnage Password/android.widget.EditText0 - Enter Password (1)'), '123456', 0)
 
 Mobile.tap(findTestObject('Chnage Password/android.widget.Button0 - SIGN IN'), 0)
@@ -61,6 +59,9 @@ Mobile.tap(findTestObject('Login To Logout/android.widget.Button0 - LOGOUT'), 0)
 Mobile.tap(findTestObject('Login To Logout/android.widget.TextView3 - Use different participant ID'), 0)
 
 Mobile.tap(findTestObject('Login To Logout/android.widget.Button1 - YES'), 0)
+
+Mobile.tap(findTestObject('cucumber_Object/02_login/android.widget.Button0 - SIGN IN'), 0)
+
 /*
 Mobile.tap(findTestObject('Chnage Password/android.widget.LinearLayout24'), 0)
 

@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020 (4).apk', true)
 
-Mobile.tap(findTestObject('Chnage Password/android.widget.Button0 - ENTER PASSWORD'), 0)
+Mobile.tap(findTestObject('cucumber_Object/03_Dashbord_Redirection/android.widget.Button0 - ENTER PASSWORD (1)'), 0)
 
 Mobile.tap(findTestObject('Chnage Password/android.widget.Button0 - CANCEL'), 0)
 

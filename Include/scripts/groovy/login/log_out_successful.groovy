@@ -49,24 +49,24 @@ public class log_out_successful {
 
 	@When("Tap Side menu and Click on Log out button")
 	public void tap_Side_menu_and_Click_on_Log_out_button() {
-		Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.ImageButton0'), 0)
-		Mobile.tap(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.Button0 - LOGOUT'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/05_log_out_successful/android.widget.ImageButton0'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/05_log_out_successful/android.widget.Button0 - LOGOUT'), 0)
 	}
 
 	@Then("verify Enter Password Screen Is open")
 	public void verify_Enter_Password_Screen_Is_open() {
-		String SignINName = Mobile.getText(findTestObject('mobile/Dahsboard -Side Menu/log_out/android.widget.Button0 - SIGN IN'), 0)
+		String SignINName = Mobile.getText(findTestObject('cucumber_Object/05_log_out_successful/android.widget.Button0 - SIGN IN'), 0)
 		println(SignINName)
 		Mobile.verifyMatch(SignINName, 'SIGN IN', false, FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("tap on Login with different PID")
 	public void tap_on_Login_with_different_PID() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.TextView3 - Use different participant ID'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/03_Dashbord_Redirection/android.widget.TextView3 - Use different participant ID'), 0)
 	}
 
 	@When("DIsplay Alret Popup and tap on yes")
 	public void display_Alret_Popup_and_tap_on_yes() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/05_log_out_successful/android.widget.Button1 - YES'), 0)
 	}
 }

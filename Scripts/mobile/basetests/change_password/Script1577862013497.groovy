@@ -19,7 +19,7 @@ Mobile.startApplication('C:\\Users\\User\\Downloads\\ClaimIt_2020 (3).apk', true
 
 Mobile.delay(10)
 
-Mobile.tap(findTestObject('Chnage Password/new/android.widget.Button0 - ENTER PASSWORD'), 0)
+Mobile.tap(findTestObject('cucumber_Object/02_login/android.widget.Button0 - ENTER PASSWORD (1)'), 0)
 
 Mobile.setText(findTestObject('Chnage Password/new/android.widget.EditText0 - Enter Password'), '123456', 0)
 

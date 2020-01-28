@@ -49,25 +49,25 @@ public class Study_faqs {
 
 	@When("Tap on Help option")
 	public void tap_on_Help_option() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.TextView1'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/04_study_faqs/android.widget.TextView1'), 0)
 	}
 
 	@Then("verify Help Option Is open")
 	public void verify_Help_Option_Is_open() {
-		//Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.Button0 - STUDY FAQS'), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/04_study_faqs/android.widget.Button0 - STUDY FAQS'), 0, FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("Tap on STUDY FAQS Option")
 	public void tap_on_STUDY_FAQS_Option() {
-		//Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.ImageView0'), 0)
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.Button0 - STUDY FAQS'),
+		//Mobile.tap(findTestObject('cucumber_Object/04_study_faqs/android.widget.ImageView0'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/04_study_faqs/android.widget.Button0 - STUDY FAQS'),
 				0)
 
 	}
 
 	@Then("verify STUDY FAQS Is Display")
 	public void verify_STUDY_FAQS_Is_Display() {
-		String studyfaq = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.TextView0 - STUDY FAQS'),
+		String studyfaq = Mobile.getText(findTestObject('cucumber_Object/04_study_faqs/android.widget.TextView0 - STUDY FAQS'),
 				0)
 		println(studyfaq)
 		Mobile.verifyMatch(studyfaq, 'STUDY FAQS', false, FailureHandling.STOP_ON_FAILURE)
@@ -75,7 +75,7 @@ public class Study_faqs {
 
 	@Then("verify redirect in STUDY FAQS Screen")
 	public void verify_redirect_in_STUDY_FAQS_Screen() {
-		String faqs = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.view.View0 - STUDY FAQs'),
+		String faqs = Mobile.getText(findTestObject('cucumber_Object/04_study_faqs/android.view.View0 - STUDY FAQs'),
 				0)
 		println(faqs)
 		Mobile.verifyMatch(faqs, 'STUDY FAQs', false, FailureHandling.STOP_ON_FAILURE)
@@ -84,23 +84,23 @@ public class Study_faqs {
 	@When("Tap in Close button")
 	public void tap_in_Close_button() {
 
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.ImageView0'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/04_study_faqs/android.widget.ImageView0'), 0)
 	}
 
 	@Then("verify redirect in Dashboard Screen")
 	public void verify_redirect_in_Dashboard_Screen() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.TextView0'), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/04_study_faqs/android.widget.TextView0'), 0, FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("Tap on Help button and tap on STUDY FAQS Option")
 	public void tap_on_Help_button_and_tap_on_STUDY_FAQS_Option() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.TextView0'), 0)
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.Button0 - STUDY FAQS'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/04_study_faqs/android.widget.TextView0'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/04_study_faqs/android.widget.Button0 - STUDY FAQS'), 0)
 	}
 
 	@Then("Verify STUDY FAQS Title")
 	public void verify_STUDY_FAQS_Title() {
-		String studyfaq = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.TextView0 - STUDY FAQS'),
+		String studyfaq = Mobile.getText(findTestObject('cucumber_Object/04_study_faqs/android.widget.TextView0 - STUDY FAQS'),
 				0)
 		println(studyfaq)
 		Mobile.verifyMatch(studyfaq, 'STUDY FAQS', false, FailureHandling.STOP_ON_FAILURE)
@@ -108,7 +108,7 @@ public class Study_faqs {
 
 	@Then("verify Content OF STUDY FAQS")
 	public void verify_Content_OF_STUDY_FAQS() {
-		String studyq = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.view.View0 - Q When will I start taking the study product'),
+		String studyq = Mobile.getText(findTestObject('cucumber_Object/04_study_faqs/android.view.View0 - Q When will I start taking the study product'),
 				0)
 		println(studyq)
 		Mobile.verifyMatch(studyq, 'Q: When will I start taking the study product?', false, FailureHandling.STOP_ON_FAILURE)
@@ -116,17 +116,17 @@ public class Study_faqs {
 
 	@When("Tap on Question not answered click here button")
 	public void tap_on_Question_not_answered_click_here_button() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.TextView0 - Question not answered Click here'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/04_study_faqs/android.widget.TextView0 - Question not answered Click here'), 0)
 	}
 
 	@Then("Verify STUDY Chat Screen is open")
 	public void verify_STUDY_Chat_Screen_is_open() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.ImageView0'), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/04_study_faqs/android.widget.ImageView0'), 0, FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("tap on CLose and Tap on STUDY Chat Close button")
 	public void tap_on_CLose_and_Tap_on_STUDY_Chat_Close_button() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.ImageView0'), 0)
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/help/study_faqs/study_faqs/android.widget.ImageView0'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/04_study_faqs/android.widget.ImageView0'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/04_study_faqs/android.widget.ImageView0'), 0)
 	}
 }
