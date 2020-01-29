@@ -7,10 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[@id='rej150470']</value>
+         <value>//label[@id='rej150964']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'rej150964' and (text() = 'Reject' or . = 'Reject')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,11 +24,11 @@
       <value>label</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>rej150470</value>
+      <value>rej150964</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,13 +36,6 @@
       <name>class</name>
       <type>Main</type>
       <value>screening-reject-task-btn label label-danger</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>excludelabels</name>
-      <type>Main</type>
-      <value>Uninterested in improving skin health,Allergy to tomato~~ latex or potato,Oral steroids,Pregnant/planning pregnancy,Skin cancer,Facial keloids,Blood thinners,Chronic liver disease,Supplements (carotenoids~~ lutein~~ melatonin or tryptophan),Immunosuppressive disease/treatment,Connective tissue disorder,Prescribed retinoid treatment,>14 alcoholic drinks/week,No reliable internet,Unwilling to follow study procedures,Perimenopausal/menopausal symptoms and/or hysterectomy or ovaries removed,Previous/planned facial procedure,UV exposure,Cardiovascular condition</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -59,7 +56,7 @@
       <matchCondition>equals</matchCondition>
       <name>aria-describedby</name>
       <type>Main</type>
-      <value>tooltip99607</value>
+      <value>tooltip372935</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -73,21 +70,28 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;rej150470&quot;)</value>
+      <value>id(&quot;rej150964&quot;)</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>excludelabels</name>
+      <type>Main</type>
+      <value>Uninterested in improving skin health,Allergy to tomato~~ latex or potato,Oral steroids,Pregnant/planning pregnancy,Skin cancer,Facial keloids,Blood thinners,Chronic liver disease,Supplements (carotenoids~~ lutein~~ melatonin or tryptophan),Immunosuppressive disease/treatment,Connective tissue disorder,Prescribed retinoid treatment,>14 alcoholic drinks/week,No reliable internet,Unwilling to follow study procedures,Perimenopausal/menopausal symptoms and/or hysterectomy or ovaries removed,Previous/planned facial procedure,UV exposure,Cardiovascular condition</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//label[@id='rej150470']</value>
+      <value>//label[@id='rej150964']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='taskTable']/tbody/tr[2]/td[5]/label[2]</value>
+      <value>//table[@id='taskTable']/tbody/tr[4]/td[5]/label[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,7 +112,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skin Type : N/AScore : N/A'])[1]/preceding::label[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Glogau Classification'])[1]/preceding::label[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Incomplete'])[1]/preceding::label[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -123,5 +134,26 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[5]/label[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//label[@id='rej150470']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='taskTable']/tbody/tr[2]/td[5]/label[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skin Type : N/AScore : N/A'])[1]/preceding::label[1]</value>
    </webElementXpaths>
 </WebElementEntity>

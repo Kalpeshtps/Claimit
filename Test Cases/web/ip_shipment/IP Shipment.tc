@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Click on Ship now button and check ip shipment</description>
+   <name>IP Shipment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c039e7ee-8881-4d6b-9b84-ee4de81fd87f</testCaseGuid>
+</TestCaseEntity>

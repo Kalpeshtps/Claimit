@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>(//h4[@id='myModalLabel'])[13]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'modal-title' and (text() = 'Screen Fail Reason' or . = 'Screen Fail Reason')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,14 +24,14 @@
       <value>h4</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>modal-title</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check Reject Button functionality in ConmedAndMedHxReview Task</description>
+   <name>ConmedAndMedHxReview_Reject</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>caa90d64-faa2-4415-9bdb-9c3dbe8cc2a0</testCaseGuid>
+</TestCaseEntity>

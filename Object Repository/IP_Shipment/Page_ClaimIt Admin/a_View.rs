@@ -45,7 +45,7 @@
       <matchCondition>equals</matchCondition>
       <name>aria-describedby</name>
       <type>Main</type>
-      <value>tooltip237293</value>
+      <value>tooltip371010</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

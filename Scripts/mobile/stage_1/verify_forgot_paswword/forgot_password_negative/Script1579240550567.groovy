@@ -63,4 +63,3 @@ Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Passwo
 
 Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/Create_New_Password_Screen/android.widget.Button1 - YES'), 
     0)
-

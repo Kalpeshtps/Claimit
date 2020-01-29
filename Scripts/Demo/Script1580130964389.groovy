@@ -15,5 +15,5 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('cucumber_Object/04_study_faqs/android.widget.ImageView0'))
+WebUI.click(findTestObject('cucumber_Object/08_elC_DOCUMENT_NOTSUBMIT/android.widget.Button0 - ENTER PASSWORD'))
 

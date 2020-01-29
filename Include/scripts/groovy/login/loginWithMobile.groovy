@@ -58,6 +58,7 @@ class loginWithMobile {
 	def Tap_on_Enter_Password_button(){
 		Mobile.tap(findTestObject('cucumber_Object/02_login/android.widget.Button0 - ENTER PASSWORD (1)'), 0)
 	}
+	
 	@Then("enter Password and tap on Sign button")
 	def enter_Password_and_tap_on_Sign_button() {
 		Mobile.setText(findTestObject('cucumber_Object/02_login/android.widget.EditText0 - Enter Password'), '123456', 0)

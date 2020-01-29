@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check Shipment Kit Approval Button functionality</description>
+   <name>shipment_kit_approval</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b71ca922-1446-4c54-ba0a-74ddf16a2bd9</testCaseGuid>
+</TestCaseEntity>

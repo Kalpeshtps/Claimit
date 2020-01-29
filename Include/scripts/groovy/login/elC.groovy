@@ -45,91 +45,79 @@ import cucumber.api.java.en.When
 
 
 class elC {
-	
-	
+
+
 	@When("Tap on elC screen")
 	public void tap_on_elC_screen() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.TextView0 - eIC'), 0)
-		
+		Mobile.tap(findTestObject('cucumber_Object/07_elC/android.widget.TextView0 - eIC'), 0)
 	}
-	
+
 	@Then("verify elC Title Is Display")
 	public void verify_elC_Title_Is_Display() {
-		String elctitle = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.TextView0 - eIC (1)'),
-			0)
+		String elctitle = Mobile.getText(findTestObject('cucumber_Object/07_elC/android.widget.TextView0 - eIC (1)'),
+				0)
 		println(elctitle)
 		Mobile.verifyMatch(elctitle, 'eIC', false, FailureHandling.STOP_ON_FAILURE)
-		
 	}
-	
+
 	@Then("verify in elC Screen Mobile Number Is display")
 	public void verify_in_elC_Screen_Mobile_Number_Is_display() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.view.View0 - (888) 232-7036'), 0, FailureHandling.STOP_ON_FAILURE)
-		
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/07_elC/android.view.View0 - (888) 232-7036'), 0, FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("tap on elC screen mobile number")
 	public void tap_on_elC_screen_mobile_number() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.view.View0 - (888) 232-7036'), 0)
-		
+		Mobile.tap(findTestObject('cucumber_Object/07_elC/android.view.View0 - (888) 232-7036'), 0)
 	}
-	
+
 	@When("Tap on elC mobile number is display and Tap on cancle button")
 	public void tap_on_elC_mobile_number_is_display_and_Tap_on_cancle_button() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.ImageView0'), 0)
+		Mobile.tap(findTestObject('cucumber_Object/07_elC/android.widget.ImageView0'), 0)
 		Mobile.pressBack()
-		
 	}
-	
+
 	@Then("verify in elC Screen Email id is display")
 	public void verify_in_elC_Screen_Email_id_is_display() {
-		
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.view.View0 - LumenatoStudyobviohealth.com'), 0, FailureHandling.STOP_ON_FAILURE)
+
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/07_elC/android.view.View0 - LumenatoStudyobviohealth.com'), 0, FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("Tap on elc Screen Emial id is Display")
 	public void tap_on_elc_Screen_Emial_id_is_Display() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.view.View0 - LumenatoStudyobviohealth.com'),
-			0)
-		
+		Mobile.tap(findTestObject('cucumber_Object/07_elC/android.view.View0 - LumenatoStudyobviohealth.com'),
+				0)
 	}
-	
+
 	@Then("verify cancle button is Disply")
 	public void verify_cancle_button_is_Disply() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.Button0 - Cancel'), 0, FailureHandling.STOP_ON_FAILURE)
-		
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/07_elC/android.widget.Button0 - Cancel'), 0, FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("Tap on pressback for redirect on elc Screen")
 	public void tap_on_pressback_for_redirect_on_elc_Screen() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.Button0 - Cancel'), 0)
-		
+		Mobile.tap(findTestObject('cucumber_Object/07_elC/android.widget.Button0 - Cancel'), 0)
 	}
-	
+
 	@Then("Verify How long is the study text able to Display")
 	public void verify_How_long_is_the_study_text_able_to_Display() {
 		Mobile.scrollToText('How long is the study? :')
-		
 	}
-	
+
 	@Then("verify STUDY TITLE Text able to Display")
 	public void verify_STUDY_TITLE_Text_able_to_Display() {
 		Mobile.scrollToText('STUDY TITLE:')
-		
 	}
-	
+
 	@Then("verify STUDY TITLE text able to Display in elC screen")
 	public void verify_STUDY_TITLE_text_able_to_Display_in_elC_screen() {
-		String content = Mobile.getText(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.view.View0 - STUDY TITLE'),
-			0)
+		String content = Mobile.getText(findTestObject('cucumber_Object/07_elC/android.view.View0 - STUDY TITLE'),
+				0)
 		println(content)
 		Mobile.verifyMatch(content, 'STUDY TITLE:', false, FailureHandling.STOP_ON_FAILURE)
-		
 	}
-	
+
 	@When("in elc screen tap on DISAGREE button")
 	public void in_elc_screen_tap_on_DISAGREE_button() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/elc/elc_object/android.widget.Button0 - DISAGREE'), 0)
-		
+		Mobile.tap(findTestObject('cucumber_Object/07_elC/android.widget.Button0 - DISAGREE'), 0)
 	}
 }

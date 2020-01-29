@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>check ip re-shipment functionality while click on reject button</description>
+   <name>ip_re_shipment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b7537f3-e40d-475c-a62b-21de21d1665a</testCaseGuid>
+</TestCaseEntity>

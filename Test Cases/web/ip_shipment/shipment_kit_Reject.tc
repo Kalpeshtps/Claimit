@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check Reject  button in Shipment kist approval task</description>
+   <name>shipment_kit_Reject</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cebe9469-aa2f-4f02-b355-6d7d237ac103</testCaseGuid>
+</TestCaseEntity>

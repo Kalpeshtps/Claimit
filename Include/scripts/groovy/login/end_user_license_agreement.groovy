@@ -49,74 +49,75 @@ public class end_user_license_agreement {
 
 	@Then("Verify end user license agreement Task Is Display")
 	public void verify_end_user_license_agreement_Task_Is_Display() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.TextView0 - End-User License Agreement'), 0, FailureHandling.STOP_ON_FAILURE)		
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.TextView0 - End-User License Agreement'), 0, FailureHandling.STOP_ON_FAILURE)		
+	
 	}
 	
 	@When("Tap on end user license agreement Task")
 	public void tap_on_end_user_license_agreement_Task() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.TextView0 - End-User License Agreement'),
+		Mobile.tap(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.TextView0 - End-User License Agreement'),
 			0)
 	}
 	
 	@Then("Verify end user license agreement Screen is Open")
 	public void verify_end_user_license_agreement_Screen_is_Open() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.Button0 - I AGREE'), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.Button0 - I AGREE'), 0, FailureHandling.STOP_ON_FAILURE)
 		
 	}
 	
 	@When("Tap on end user license agreement Screen Close button")
 	public void tap_on_end_user_license_agreement_Screen_Close_button() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.ImageButton0'),
+		Mobile.tap(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.ImageButton0'),
 			0)	
 	}
 	
 	@When("Tap on Need Help Tap here to talk to study coordinator button")
 	public void tap_on_Need_Help_Tap_here_to_talk_to_study_coordinator_button() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.TextView0 - Need Help Tap here to talk toa study coordinator'),
+		Mobile.tap(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.TextView0 - Need Help Tap here to talk toa study coordinator'),
 			0)
 	}
 	
 	@Then("verify Need Help Tap here to talk to study coordinator screen is open")
 	public void verify_Need_Help_Tap_here_to_talk_to_study_coordinator_screen_is_open() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.ImageView0'), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.ImageView0'), 0, FailureHandling.STOP_ON_FAILURE)
 			
 	}
 	@Then("Tap on study coordinator screen Close button")
 	public void tap_on_study_coordinator_screen_Close_button() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.ImageView0'),
+		Mobile.tap(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.ImageView0'),
 			0)
 	}
 
 	
 	@Then("verify Agree buton is Display")
 	public void verify_Agree_buton_is_Display() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.Button0 - I AGREE'), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.Button0 - I AGREE'), 0, FailureHandling.STOP_ON_FAILURE)
 
 	}
 	
 	@When("Tap on Agree button")
 	public void tap_on_Agree_button() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.Button0 - I AGREE'),
+		Mobile.tap(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.Button0 - I AGREE'),
 			0)
 		
 	}
 	
 	@Then("verify Study Overview Screen Is open")
 	public void verify_Study_Overview_Screen_Is_open() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.view.View0 - Study Overview '), 0, FailureHandling.STOP_ON_FAILURE)
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.view.View0 - Study Overview '),
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/06_end_user_license_agreement/android.view.View0 - Study Overview '), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.tap(findTestObject('cucumber_Object/06_end_user_license_agreement/android.view.View0 - Study Overview '),
 			0)
 	}
 	
 	@Then("verify next button is Display")
 	public void verify_next_button_is_Display() {
-		Mobile.verifyElementExist(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.Button0 - NEXT'), 0, FailureHandling.STOP_ON_FAILURE)
+		Mobile.verifyElementExist(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.Button0 - NEXT'), 0, FailureHandling.STOP_ON_FAILURE)
 		
 	}
 	
 	@When("Tap on next button in Study Overview screen")
 	public void tap_on_next_button_in_Study_Overview_screen() {
-		Mobile.tap(findTestObject('mobile/stage_1_pre_screening_object/end_user_license_agreement/end_user_liecense_agreement/android.widget.Button0 - NEXT'),
+		Mobile.tap(findTestObject('cucumber_Object/06_end_user_license_agreement/android.widget.Button0 - NEXT'),
 			0)
 		
 	}
